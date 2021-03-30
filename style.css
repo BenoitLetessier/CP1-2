@@ -1,0 +1,146 @@
+/* Style by Letessier Benoit for Pro title CP 2 */
+
+body{
+    background-color: white;
+}
+
+#page{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100vw;
+    height: 50vh;
+    background-image: url(./images/fond.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.left__header{
+    position: absolute;
+    color: white;
+    top: 4%;
+    left: 1%;
+    font-size: 3rem;
+    width: 100%;
+}
+
+
+.right{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100%;
+    align-content: flex-start;
+}
+
+.right__menu{
+    width: 100%;
+    background-color: rgb(253, 252, 252);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: .3rem;
+    height: 3rem;
+}
+
+.right__menu--link{
+    padding: .4rem;
+    margin: auto auto;
+}
+
+.right__menu--link:hover{
+    background-color: rgb(236, 235, 235);
+    box-shadow: 0 0 .1rem .1rem rgb(226, 226, 226);
+}
+
+.right__box{
+    width: 50%;
+    background-color: white;
+    border: .1rem solid beige;
+    padding: .3rem;
+}
+
+.right__box:hover{
+box-shadow:inset 0 0 .1rem .1rem rgb(240, 240, 240);
+background-color: #fafafa;
+}
+
+.right__box--article{
+    width: 100%;
+    background-color: white;
+    border: .1rem solid beige;
+    padding: .3rem;
+    margin: 1rem 0 0 0;
+}
+
+.right__box--title{
+    color: rgb(9, 141, 112);
+    font-weight: bold;
+    line-height: .4rem;
+    margin: .3rem 0 0 0;
+}
+
+.right__box--infos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: slategray;
+    margin: 1rem 0 0 0;
+}
+
+.right__box--link{
+    margin: .3rem auto;
+    text-align: center;
+    color: gray;
+}
+
+.right__box--link:hover{
+color: cornflowerblue;
+}
+
+#footer{
+    margin: .2rem auto;
+    color: cadetblue;
+    background-color: rgb(253, 252, 252);
+    width: 100%;
+    padding: .2rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .left, .right{
+        width: 50%;
+        height: 100vh;
+    }
+   .right{
+       overflow-y: auto;
+   }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .left, .right{
+        width: 50%;
+        height: 100vh;
+    }
+
+}
+
+@media screen and (min-width: 1850px) {
+    .left, .right{
+        width: 50%;
+        height: 100vh;
+    }
+
+}
